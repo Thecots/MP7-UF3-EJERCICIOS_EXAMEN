@@ -1,0 +1,1 @@
+<?php $dblink=mysqli_connect("127.0.0.1","daw_user","P@ssw0rd","candidats") or exit(mysqli_connect_error()); ?>

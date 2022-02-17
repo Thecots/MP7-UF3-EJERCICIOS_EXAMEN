@@ -1,0 +1,19 @@
+DROP DATABASE IF EXISTS candidats;
+CREATE DATABASE candidats;
+USE candidats;
+
+CREATE TABLE usuaris(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  usuari VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE registre(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  fecha DATE NOT NULL,
+  ip VARCHAR(30),
+  usuari VARCHAR(50),
+  exitos BOOLEAN
+)
+
+INSERT INTO usuaris VALUES
+(null,'root');
